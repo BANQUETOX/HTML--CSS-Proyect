@@ -6,6 +6,9 @@
     --color-headings: #1b0760;
     --color-body: #918ca4;
 }
+*, *::before,*::after{
+    box-sizing: border-box;
+}
 html{
     font-size: 62.5%;
 }
@@ -134,3 +137,85 @@ a{
         padding-left: 0;
     }
 }
+
+/* icons */
+
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.icon--primary{
+    fill: var(--color-primary)
+}
+.icon-container{
+    background-color: #f3f9fa;
+    border-radius: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+}
+/*Button
+ accent color
+ without backgrund color
+ Fill container
+ fit content */
+
+.button{
+    border-radius: 40px;
+    border: 0;
+    font-size: 1.8rem;
+    padding: 2rem 4vw;
+    font-weight:600;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 1rem 0;
+}
+.button--block{
+    width: 100%;
+    display: inline-block;
+}
+.button--primary{
+    background-color: var(--color-primary);
+    color: #fff
+}
+.button--primary:hover{
+    background-color: #1f6fd6;
+}
+.button--secundary{
+    background-color: var(--color-secondary);
+    color: #fff
+}
+.button--secundary:hover{
+    background-color: #00b0cf;
+}
+.button--accent{
+    background-color: var(--color-accent); 
+    color: #fff
+}
+.button--accent:hover{
+    background-color: #a52303;
+}
+.button--headings{
+    background-color: var(--color-headings);
+    color: #fff
+}
+
+.button--empty{
+    color: var(--color-headings) ;
+    background-color: transparent;
+    border: solid var(--color-headings);
+}
+.button--empty:hover{
+    background-color: var(--color-headings);
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+      font-size: 1.5rem;
+    }
+  }
