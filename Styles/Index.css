@@ -158,7 +158,7 @@ a{
 .icon--white{
     fill: white;
 }
-.icon-container{
+.icon--container{
     background-color: #f3f9fa;
     border-radius: 100px;
     display: inline-flex;
@@ -675,11 +675,27 @@ a{
 
 }
 
-/* Plans Block */
-.block-plans .grid{
-  gap: 8rem 4rem;
+/* features */
+.feature{
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+
 }
-.block-plans .card{
-  max-width: 500px;
-  margin: 0 auto;
+
+.feature:first-of-type{
+  margin-top: 6rem;
+}
+
+.feature__heading{
+  margin: 1rem 0;
+}
+
+.feature__image{
+  width: 100%;
+}
+
+@media screen and (min-width:768px){
+  .feature:nth-of-type(even) .feature__content{
+    order: 2;
+  }
 }
